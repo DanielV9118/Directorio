@@ -12,7 +12,8 @@ namespace Directorio
         static void Main(string[] args)
         {
             Persona persona = new Persona();
-            String nombreCompleto = string.Empty;
+            Marcador marcador = new Marcador();
+            String nombreCompleto = string.Empty; //inicia una cadena de texto
 
 
 
@@ -21,11 +22,15 @@ namespace Directorio
 
 
             nombreCompleto = persona.getNombreCompleto();
-            Console.WriteLine("Persona 1" + nombreCompleto);
+            
+
+            Console.WriteLine("Persona 1" + nombreCompleto + "Salario:" + marcador.getSalario(44*4));
             nombreCompleto = persona.getNombreCompleto("Juan", "Lopez Lopez");  
-            Console.WriteLine("Persona 2" + nombreCompleto); 
+            
+            
+            Console.WriteLine("Persona 2" + nombreCompleto + "Salario:" + marcador.getSalario(35 * 4)); 
 
-
+            
         }
     }
 }
